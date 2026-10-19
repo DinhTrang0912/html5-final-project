@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Shop - Cửa hàng dành cho sinh viên</title>
+</head>
+
+<body>
+    <header>
+        <h1>Student Shop</h1>
+        <p>Cửa hàng dành cho sinh viên</p>
+
+        <nav aria-label="Điều hướng chính">
+            <a href="#home">Trang chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#prices">Bảng giá</a>
+            <a href="#order">Đặt hàng</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="home">
+            <h2>Đồ dùng tiện ích dành cho sinh viên</h2>
+
+            <p>
+                Student Shop cung cấp các sản phẩm đơn giản,
+                tiện dụng và phù hợp với nhu cầu học tập,
+                sinh hoạt hằng ngày của sinh viên.
+            </p>
+
+            <img src="images/polo.webp"
+                 alt="Áo polo dành cho sinh viên"
+                 width="250">
+
+            <img src="images/aothun.webp"
+                 alt="Áo thun trẻ trung dành cho sinh viên"
+                 width="250">
+
+            <img src="images/somi.webp"
+                 alt="Áo sơ mi lịch sự dành cho sinh viên"
+                 width="250">
+        </section>
+
+        <hr>
+
+        <section id="products">
+            <h2>Sản phẩm nổi bật</h2>
+
+            <article>
+                <h3>Áo Polo Student Shop</h3>
+
+                <figure>
+                    <img src="images/polo.webp"
+                         alt="Mẫu áo polo Student Shop"
+                         width="250">
+
+                    <figcaption>
+                        Áo polo dành cho sinh viên
+                    </figcaption>
+                </figure>
+
+                <p>Giá: 300.000 VNĐ</p>
+
+                <button type="button"
+                    onclick="alert('Bạn đã chọn Áo Polo Student Shop!')">
+                    Thêm vào giỏ
+                </button>
+            </article>
+
+            <article>
+                <h3>Áo Sơ mi Student Shop</h3>
+
+                <figure>
+                    <img src="images/somi.webp"
+                         alt="Mẫu áo sơ mi Student Shop"
+                         width="250">
+
+                    <figcaption>
+                        Áo sơ mi dành cho sinh viên
+                    </figcaption>
+                </figure>
+
+                <p>Giá: 450.000 VNĐ</p>
+
+                <button type="button"
+                    onclick="alert('Bạn đã chọn Áo Sơ mi Student Shop!')">
+                    Thêm vào giỏ
+                </button>
+            </article>
+
+            <article>
+                <h3>Áo Thun Student Shop</h3>
+
+                <figure>
+                    <img src="images/aothun.webp"
+                         alt="Mẫu áo thun Student Shop"
+                         width="250">
+
+                    <figcaption>
+                        Áo thun dành cho sinh viên
+                    </figcaption>
+                </figure>
+
+                <p>Giá: 200.000 VNĐ</p>
+
+                <button type="button"
+                    onclick="alert('Bạn đã chọn Áo Thun Student Shop!')">
+                    Thêm vào giỏ
+                </button>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="prices">
+            <h2>Bảng giá sản phẩm</h2>
+
+            <table border="1">
+                <caption>Bảng giá Student Shop</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Tên sản phẩm</th>
+                        <th scope="col">Đơn giá</th>
+                        <th scope="col">Tình trạng</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Áo Polo Student Shop</td>
+                        <td>300.000 VNĐ</td>
+                        <td>Còn hàng</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Áo Sơ mi Student Shop</td>
+                        <td>450.000 VNĐ</td>
+                        <td>Còn hàng</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Áo Thun Student Shop</td>
+                        <td>200.000 VNĐ</td>
+                        <td>Còn hàng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="order">
+            <h2>Đặt hàng nhanh</h2>
+
+            <form id="orderForm">
+                <p>
+                    <label for="fullname">Họ tên:</label>
+                    <input type="text" id="fullname"
+                           name="fullname" required>
+                </p>
+
+                <p>
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone"
+                           name="phone" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                           name="email" required>
+                </p>
+
+                <p>
+                    <label for="product">Sản phẩm:</label>
+
+                    <select id="product" name="product" required>
+                        <option value="">-- Chọn sản phẩm --</option>
+                        <option value="Áo Polo">Áo Polo Student Shop</option>
+                        <option value="Áo Sơ mi">Áo Sơ mi Student Shop</option>
+                        <option value="Áo Thun">Áo Thun Student Shop</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="quantity">Số lượng:</label>
+                    <input type="number" id="quantity"
+                           name="quantity" min="1" value="1" required>
+                </p>
+
+                <p>
+                    <label for="address">Địa chỉ giao hàng:</label>
+                    <input type="text" id="address"
+                           name="address" required>
+                </p>
+
+                <p>
+                    <label for="notes">Ghi chú:</label>
+                    <textarea id="notes" name="notes"
+                              rows="4" cols="40"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="agreement"
+                           name="agreement" required>
+
+                    <label for="agreement">
+                        Tôi đồng ý với các điều khoản và điều kiện.
+                    </label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Đặt hàng">
+                </p>
+
+                <p id="formMessage" role="status"
+                   aria-live="polite"></p>
+            </form>
+        </section>
+
+        <hr>
+
+        <aside>
+            <h2>Thông tin thêm</h2>
+
+            <h3>Danh mục sản phẩm</h3>
+
+            <ul>
+                <li>Thời trang</li>
+                <li>Phụ kiện</li>
+            </ul>
+
+            <h3>Cách mua hàng</h3>
+
+            <ol>
+                <li>Chọn sản phẩm</li>
+                <li>Thêm vào giỏ</li>
+                <li>Điền thông tin đặt hàng</li>
+                <li>Xác nhận đơn hàng</li>
+            </ol>
+
+            <h3>Thông tin cửa hàng</h3>
+
+            <dl>
+                <dt>Thời gian làm việc</dt>
+                <dd>08:00 - 21:00</dd>
+
+                <dt>Hình thức</dt>
+                <dd>Bán hàng trực tuyến</dd>
+
+                <dt>Giao hàng</dt>
+                <dd>Nội thành Hà Nội</dd>
+            </dl>
+
+            <h3>Phí giao hàng</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Đơn hàng</th>
+                        <th scope="col">Phí giao hàng</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Dưới 200.000 VNĐ</td>
+                        <td>21.000 VNĐ</td>
+                    </tr>
+
+                    <tr>
+                        <td>Từ 200.000 đến dưới 450.000 VNĐ</td>
+                        <td>15.000 VNĐ</td>
+                    </tr>
+
+                    <tr>
+                        <td>Từ 450.000 VNĐ</td>
+                        <td>Miễn phí</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+
+        <section>
+            <h2>Tìm hiểu thêm về HTML</h2>
+
+            <p>
+                Tham khảo tài liệu HTML tại
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    MDN Web Docs
+                </a>.
+            </p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer id="contact">
+        <h2>Student Shop</h2>
+
+        <p>Cửa hàng trực tuyến dành cho sinh viên.</p>
+
+        <h3>Hỗ trợ khách hàng</h3>
+
+        <ul>
+            <li>Hướng dẫn mua hàng</li>
+            <li>Chính sách đổi trả</li>
+            <li>Câu hỏi thường gặp</li>
+        </ul>
+
+        <h3>Liên hệ</h3>
+
+        <p>Điện thoại: 087 665 2814</p>
+        <p>Email: 24107461@st.phenikaa-uni.edu.vn</p>
+
+        <p>&copy; 2026 Student Shop</p>
+    </footer>
+
+    <script>
+        document.getElementById("orderForm").addEventListener(
+            "submit",
+            function(event) {
+                event.preventDefault();
+
+                document.getElementById("formMessage").textContent =
+                    "Cảm ơn bạn! Đây là trang minh họa, đơn hàng chưa được gửi thật.";
+            }
+        );
+    </script>
+</body>
+</html>
